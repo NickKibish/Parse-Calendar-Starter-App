@@ -1,0 +1,413 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3CF92E88BC5231AE06692FD8 /* Pods_SKDCalendar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80E5667BDECF61EC7E9AED02 /* Pods_SKDCalendar.framework */; };
+		432CC45D1C459FE10014DD87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432CC45C1C459FE10014DD87 /* AppDelegate.swift */; };
+		432CC4621C459FE10014DD87 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 432CC4601C459FE10014DD87 /* Main.storyboard */; };
+		432CC4641C459FE10014DD87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 432CC4631C459FE10014DD87 /* Assets.xcassets */; };
+		432CC4671C459FE10014DD87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 432CC4651C459FE10014DD87 /* LaunchScreen.storyboard */; };
+		432CC46F1C45B16E0014DD87 /* EventListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432CC46E1C45B16E0014DD87 /* EventListViewController.swift */; };
+		432CC4721C45BB910014DD87 /* PFUser+Facebook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432CC4711C45BB910014DD87 /* PFUser+Facebook.swift */; };
+		432CC4741C45CD900014DD87 /* NewEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432CC4731C45CD900014DD87 /* NewEventViewController.swift */; };
+		432CC4771C45CEBB0014DD87 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432CC4761C45CEBB0014DD87 /* Event.swift */; };
+		432CC4791C45DC630014DD87 /* AddParticipantsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432CC4781C45DC630014DD87 /* AddParticipantsViewController.swift */; };
+		432CC47C1C46BA8B0014DD87 /* SelectLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432CC47B1C46BA8B0014DD87 /* SelectLocationViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		432CC4591C459FE10014DD87 /* SKDCalendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SKDCalendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		432CC45C1C459FE10014DD87 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		432CC4611C459FE10014DD87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		432CC4631C459FE10014DD87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		432CC4661C459FE10014DD87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		432CC4681C459FE10014DD87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		432CC46E1C45B16E0014DD87 /* EventListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventListViewController.swift; path = EventList/EventListViewController.swift; sourceTree = "<group>"; };
+		432CC4711C45BB910014DD87 /* PFUser+Facebook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "PFUser+Facebook.swift"; path = "Extentions/PFUser+Facebook.swift"; sourceTree = "<group>"; };
+		432CC4731C45CD900014DD87 /* NewEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewEventViewController.swift; path = EventList/NewEventViewController.swift; sourceTree = "<group>"; };
+		432CC4761C45CEBB0014DD87 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Event.swift; path = Event/Event.swift; sourceTree = "<group>"; };
+		432CC4781C45DC630014DD87 /* AddParticipantsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddParticipantsViewController.swift; path = EventList/AddParticipantsViewController.swift; sourceTree = "<group>"; };
+		432CC47B1C46BA8B0014DD87 /* SelectLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SelectLocationViewController.swift; path = EventList/SelectLocationViewController.swift; sourceTree = "<group>"; };
+		80E5667BDECF61EC7E9AED02 /* Pods_SKDCalendar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SKDCalendar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8AE95374E4F36DD291C7F91 /* Pods-SKDCalendar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SKDCalendar.release.xcconfig"; path = "Pods/Target Support Files/Pods-SKDCalendar/Pods-SKDCalendar.release.xcconfig"; sourceTree = "<group>"; };
+		C807799C1D4BCFEECC9F4A5B /* Pods-SKDCalendar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SKDCalendar.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SKDCalendar/Pods-SKDCalendar.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		432CC4561C459FE10014DD87 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CF92E88BC5231AE06692FD8 /* Pods_SKDCalendar.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		432CC4501C459FE10014DD87 = {
+			isa = PBXGroup;
+			children = (
+				432CC45B1C459FE10014DD87 /* SKDCalendar */,
+				432CC45A1C459FE10014DD87 /* Products */,
+				BF7E27498807DBCF2DFBB28D /* Pods */,
+				97F3EAED3BFEBE965C84D8FD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		432CC45A1C459FE10014DD87 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				432CC4591C459FE10014DD87 /* SKDCalendar.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		432CC45B1C459FE10014DD87 /* SKDCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				432CC45C1C459FE10014DD87 /* AppDelegate.swift */,
+				432CC47A1C45DC6A0014DD87 /* ViewControllers */,
+				432CC4751C45CEA40014DD87 /* Event */,
+				432CC4701C45BB720014DD87 /* Extentions */,
+				432CC4601C459FE10014DD87 /* Main.storyboard */,
+				432CC4631C459FE10014DD87 /* Assets.xcassets */,
+				432CC4651C459FE10014DD87 /* LaunchScreen.storyboard */,
+				432CC4681C459FE10014DD87 /* Info.plist */,
+			);
+			path = SKDCalendar;
+			sourceTree = "<group>";
+		};
+		432CC4701C45BB720014DD87 /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				432CC4711C45BB910014DD87 /* PFUser+Facebook.swift */,
+			);
+			name = Extentions;
+			sourceTree = "<group>";
+		};
+		432CC4751C45CEA40014DD87 /* Event */ = {
+			isa = PBXGroup;
+			children = (
+				432CC4761C45CEBB0014DD87 /* Event.swift */,
+			);
+			name = Event;
+			sourceTree = "<group>";
+		};
+		432CC47A1C45DC6A0014DD87 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				432CC46E1C45B16E0014DD87 /* EventListViewController.swift */,
+				432CC4731C45CD900014DD87 /* NewEventViewController.swift */,
+				432CC4781C45DC630014DD87 /* AddParticipantsViewController.swift */,
+				432CC47B1C46BA8B0014DD87 /* SelectLocationViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		97F3EAED3BFEBE965C84D8FD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				80E5667BDECF61EC7E9AED02 /* Pods_SKDCalendar.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF7E27498807DBCF2DFBB28D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C807799C1D4BCFEECC9F4A5B /* Pods-SKDCalendar.debug.xcconfig */,
+				B8AE95374E4F36DD291C7F91 /* Pods-SKDCalendar.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		432CC4581C459FE10014DD87 /* SKDCalendar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 432CC46B1C459FE10014DD87 /* Build configuration list for PBXNativeTarget "SKDCalendar" */;
+			buildPhases = (
+				DE159CE0336585385BE60C6C /* Check Pods Manifest.lock */,
+				432CC4551C459FE10014DD87 /* Sources */,
+				432CC4561C459FE10014DD87 /* Frameworks */,
+				432CC4571C459FE10014DD87 /* Resources */,
+				1973DDF521519C2732197DD6 /* Embed Pods Frameworks */,
+				61EEA0F31937FB82FB1F8C80 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SKDCalendar;
+			productName = SKDCalendar;
+			productReference = 432CC4591C459FE10014DD87 /* SKDCalendar.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		432CC4511C459FE10014DD87 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Nick Kibish";
+				TargetAttributes = {
+					432CC4581C459FE10014DD87 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = 432CC4541C459FE10014DD87 /* Build configuration list for PBXProject "SKDCalendar" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 432CC4501C459FE10014DD87;
+			productRefGroup = 432CC45A1C459FE10014DD87 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				432CC4581C459FE10014DD87 /* SKDCalendar */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		432CC4571C459FE10014DD87 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				432CC4671C459FE10014DD87 /* LaunchScreen.storyboard in Resources */,
+				432CC4641C459FE10014DD87 /* Assets.xcassets in Resources */,
+				432CC4621C459FE10014DD87 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1973DDF521519C2732197DD6 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SKDCalendar/Pods-SKDCalendar-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		61EEA0F31937FB82FB1F8C80 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SKDCalendar/Pods-SKDCalendar-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE159CE0336585385BE60C6C /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		432CC4551C459FE10014DD87 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				432CC47C1C46BA8B0014DD87 /* SelectLocationViewController.swift in Sources */,
+				432CC4721C45BB910014DD87 /* PFUser+Facebook.swift in Sources */,
+				432CC45D1C459FE10014DD87 /* AppDelegate.swift in Sources */,
+				432CC4791C45DC630014DD87 /* AddParticipantsViewController.swift in Sources */,
+				432CC4741C45CD900014DD87 /* NewEventViewController.swift in Sources */,
+				432CC46F1C45B16E0014DD87 /* EventListViewController.swift in Sources */,
+				432CC4771C45CEBB0014DD87 /* Event.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		432CC4601C459FE10014DD87 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				432CC4611C459FE10014DD87 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		432CC4651C459FE10014DD87 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				432CC4661C459FE10014DD87 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		432CC4691C459FE10014DD87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		432CC46A1C459FE10014DD87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		432CC46C1C459FE10014DD87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C807799C1D4BCFEECC9F4A5B /* Pods-SKDCalendar.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SKDCalendar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SKD.SKDCalendar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		432CC46D1C459FE10014DD87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8AE95374E4F36DD291C7F91 /* Pods-SKDCalendar.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SKDCalendar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SKD.SKDCalendar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		432CC4541C459FE10014DD87 /* Build configuration list for PBXProject "SKDCalendar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				432CC4691C459FE10014DD87 /* Debug */,
+				432CC46A1C459FE10014DD87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		432CC46B1C459FE10014DD87 /* Build configuration list for PBXNativeTarget "SKDCalendar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				432CC46C1C459FE10014DD87 /* Debug */,
+				432CC46D1C459FE10014DD87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 432CC4511C459FE10014DD87 /* Project object */;
+}
