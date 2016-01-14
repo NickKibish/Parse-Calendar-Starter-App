@@ -33,28 +33,7 @@ class AddParticipantsViewController: UIViewController {
     }
     
     func loadUsers() {
-        //5
-        unselectedUsers.removeAll()
-        let query = PFUser.query()
-        let userIds = selectedUsers.map { (user) -> String in
-            return user.objectId!
-        }
-        if searchBar.text?.characters.count > 0 {
-            query?.whereKey("username", containsString: searchBar.text)
-        }
-        query?.whereKey("objectId", notContainedIn: userIds)
-        query?.findObjectsInBackgroundWithBlock({ (result, error) -> Void in
-            if error != nil {
-                print("Can't load users: \(error)")
-            }
-            if let users = result as? [PFUser] {
-                self.unselectedUsers = users
-                dispatch_async(dispatch_get_main_queue(), {
-                    self.tableView.reloadData()
-                })
-            }
-        })
-        //5!
+        
     }
 }
 
@@ -80,16 +59,6 @@ extension AddParticipantsViewController: UITableViewDelegate {
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
-        if indexPath.section == 0 {
-            return
-        }
-        
-        let user = unselectedUsers[indexPath.row]
-        unselectedUsers.removeAtIndex(indexPath.row)
-        tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
-        
-        selectedUsers.append(user)
-        tableView.insertRowsAtIndexPaths([NSIndexPath(forRow: selectedUsers.count - 1, inSection: 0)], withRowAnimation: .Automatic)
     }
     
     func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
@@ -114,23 +83,6 @@ extension AddParticipantsViewController: UITableViewDataSource {
         var cell = tableView.dequeueReusableCellWithIdentifier(UserCellID) as? AddParticipantsTableViewCell
         if cell == nil {
             cell = AddParticipantsTableViewCell(style: .Default, reuseIdentifier: UserCellID)
-        }
-        
-        var users: [PFUser]?
-        if indexPath.section == 0 {
-            users = selectedUsers
-        } else {
-            users = unselectedUsers
-        }
-        
-        let user = users![indexPath.row]
-        cell?.userName.text = user.username
-        
-        cell?.avatar.image = UIImage(named: "noavatar")
-        user.loadImage { (image) -> Void in
-            if image != nil {
-                cell?.avatar.image = image
-            }
         }
         
         cell?.avatar.layer.cornerRadius = 35

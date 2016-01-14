@@ -83,38 +83,7 @@ extension NewEventViewController {
     }
     
     @IBAction func done(sender: AnyObject) {
-        let event = Event.event()
-        event.name = eventName
-        event.eventDescription = eventDescription
-        event.date = eventDate
-        event.location = eventLocation!
-        event.participants = participants!
-        event.saveInBackgroundWithBlock { (succeed, error) -> Void in
-            if error != nil {
-                self.showErrorMessage(error)
-                return
-            }
-            
-            let roleName = "event" + event.objectId! + "role"
-            let role = PFRole(name: roleName, acl: PFACL(user: PFUser.currentUser()!))
-            for user in self.participants! {
-                role.users.addObject(user)
-            }
-            
-            role.saveInBackgroundWithBlock({ (succeed, error) -> Void in
-                if error != nil {
-                    self.showErrorMessage(error)
-                    return
-                }
-                let acl = PFACL()
-                acl.setReadAccess(true, forRole: role)
-                event.ACL = acl
-                event.saveInBackground()
-                dispatch_async(dispatch_get_main_queue(), { () -> Void in
-                    self.navigationController?.popViewControllerAnimated(true)
-                })
-            })
-        }
+        
     }
     
     func showErrorMessage(error:NSError?) {
